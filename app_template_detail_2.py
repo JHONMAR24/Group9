@@ -1,5 +1,11 @@
 from flask import Flask, render_template
 import sqlite3
+import pathlib 
+
+base_path = pathlib.Path(r"C:\Users\legion\OneDrive\Documents\Data Analytic\flask1")
+db_name = "autos1.db"
+db_path = base_path / db_name
+print(db_path)
 
 app = Flask(__name__)
 
@@ -13,12 +19,12 @@ def about():
 
 @app.route("/data")
 def data():
-    conn = sqlite3.connect("autos1.db")
-    cursor = conn.cursor()
+    con = sqlite3.connect(db_path)
+    cursor = con.cursor()
     auto = cursor.execute("SELECT * FROM auto").fetchall()
-    conn.close()
+    con.close()
 
-    return render_template("data_table.html", auto=auto)
+    return render_template("data_table.html", auto = auto)
 
-if __name__ == "__main__":
+if __name__=="__main__":
     app.run(debug=True)
