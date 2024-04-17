@@ -1,8 +1,13 @@
+#Import Libraries to be used through all the code
 from flask import Flask, render_template
 import sqlite3
 import pathlib 
 
+#Database location folder path/
+#PLEASE: Update your device folder location where this repository was download/stored.
 base_path = pathlib.Path(r"C:\Users\User")
+
+#Database name where data frame was stored
 db_name = "kobe.db"
 db_path = base_path / db_name
 print(db_path)

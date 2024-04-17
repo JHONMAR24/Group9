@@ -20,23 +20,28 @@
         }
     </style>
 </head>
-<body style="background-color: 	#93EEAA"> 
-    <h1>Online Sales Table</h1>
+<body style="background-color: #93EEAA;"> 
+    <h1>Kobey Brian  Game Characteristic table</h1>
     <table>
         <thead>
-            <tr><th>InvoiceNo</th><th>Stock Code</th><th>Description</th><th>Quantity</th><th>InvoiceDate</th><th>UnitPrice</th><th>CustomerID</th><th>Country</th></tr>
+            <tr>
+                <th>vs</th>
+                <th>game</th>
+                <th>quarter</th>
+                <th>time</th>
+                <th>description</th>
+                <th>basket</th>
+            </tr>
         </thead>
         <tbody>
-            {% for car in auto %}
+            {% for row in kobe %}
             <tr>
-                <td>{{ car[0] }}</td>
-                <td>{{ car[1] }}</td>
-                <td>{{ car[2] }}</td>
-                <td>{{ car[3] }}</td>
-                <td>{{ car[4] }}</td>
-                <td>{{ car[5] }}</td>
-                <td>{{ car[6] }}</td>
-                <td>{{ car[7] }}</td>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
             </tr>
             {% endfor %}    
         </tbody>
