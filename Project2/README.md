@@ -10,7 +10,7 @@ collected from an external source.
 - Download or clone our repository to your device. This includes all files required to run this project.
 - type `pip install -r requirements.txt` in command prompt (this will install required package for project).
 - Execute `main.ipynb` file to create database file. This database will stored data collected from a external source.
-	Important: DB file named `koba.db` will be created at this step, and It needs to be reachable on next stage.
+	* **Important: DB file named `koba.db` will be created at this step, and It needs to be reachable on next stage.**
 - Extract the folder path where you stored our repository. Then edit *base_path* variable located in line #5 inside `app_template_detail.py` file.
 	This steps allows you read the database file in order to show this data through the website.
 - Save app_template_detail.py file to keep new modifications.
