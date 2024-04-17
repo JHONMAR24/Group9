@@ -26,15 +26,18 @@ Our code performs below actions sequencely:
 1. Import of required libraries. For this stage we will use pandas ans sqlite3.
 2. Data collection from external repository reading a CSV file that is located externally. All this data is stored in variable 'df'.
 3. After we create 'createDB' function, we pass below inputs to this function:
-* Name of the database.
-* FileName: This can be a file path either locally or from the web. 
-* Access to sqlite to check if data is reachable from database file. 
+* DBname: Name of the database.
+* FileName: This can be a file path either locally or from the web.
+* TableName: Name of the table
+4. Access to connection `conn` using sqlite library to check if data is reachable from database file. 
 		
 **app-template-detail.py** file:
 
 1. Import of required libraries. For this stage we will use flask, sqlite3, and pathlib.
-2. In order to find the Database file (in this case (kobe.db) we need to update this py file to reach this file.
-3. Use of modules of flask to show structurally our webpage. Below is a tree of how our website was designed:
+2. In order to find the Database file (in this case `kobe.db`) we need to update this `.py` file to reach this file.
+3. Use of modules of flask to show structurally our webpage.
+
+   Below is a tree of how our website was designed:
 
 		Access to 127.0.0.1:5000 using any navigator program:
 		
