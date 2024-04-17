@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import sqlite3
 import pathlib 
 
-base_path = pathlib.Path(r"C:\Users\legion\OneDrive\Documents\Data Analytic\flask1")
+base_path = pathlib.Path(r"C:\Users\User")
 db_name = "kobe.db"
 db_path = base_path / db_name
 print(db_path)
@@ -27,4 +27,4 @@ def data():
     return render_template("data_table.html", kobe = kobe)
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)

@@ -1,3 +1,9 @@
-#Libraries required to operate the code:
-import pandas as pd
-import sqlite3
+#Please, install below libraries versions if they are not installed:
+pandas==2.2.2
+flask==3.0.3
+pathlib==1.0.1
+
+
+
+
+
