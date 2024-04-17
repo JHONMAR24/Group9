@@ -7,7 +7,8 @@
     <body>
         <h1>About</h1>
         <h2>Source of the data</h2>
-        <p>Link to download: href="https://raw.githubusercontent.com/akmand/datasets/master/openintro/kobe.csv">Here!</p>
+        <p>Link to download: <a href="https://raw.githubusercontent.com/akmand/datasets/master/openintro/kobe.csv">Here!</a>
+             </p>
 
         <h2>Definition of each variable</h2>
         <table>
@@ -16,6 +17,18 @@
                     <th>Variable</th>
                     <th>Definition</th>
                 </tr>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+                    th, td {
+                        border: 1px solid black;
+                        padding: 8px;
+                        text-align: left; }
+                    
+                </style>
+                
             </thead>
             <tbody>
                 <tr>
@@ -33,7 +46,7 @@
                 </tr>
                 <tr>
                     <td>time</td>
-                    <td></td>
+                    <td>A character vector, time at which Kobe took a shot</td>
                 </tr>
                 <tr>
                     <td>description</td>
