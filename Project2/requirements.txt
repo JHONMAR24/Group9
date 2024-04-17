@@ -1,1 +1,3 @@
-
+#Libraries required to operate the code:
+import pandas as pd
+import sqlite3
