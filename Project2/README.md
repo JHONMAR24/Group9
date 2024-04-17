@@ -1,11 +1,11 @@
 # Python Group project #6
 
-# Overview
+## Overview
 This code shows a website that is based on flask, and shows a table retrieved from a database which contains a dataframe
 collected from an external source.
 
 
-### What steps you have to follow?
+## What steps you have to follow?
 - Internet connection required to retrieve the dataset stored in the internet (csv file) and be imported into a database.
 - Download or clone our repository to your device. This includes all files required to run this project.
 - type `pip install -r requirements.txt` in command prompt(this will install required package for project)
@@ -17,7 +17,7 @@ collected from an external source.
 - Execute `app_template_detail.py` to initialize web server from your device.
 - Surf into the website 127.0.0.1/5000.
 
-### Project flow & explaination
+## Project flow & explaination
 
 Our code performs below actions sequencely:
 
