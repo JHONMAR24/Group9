@@ -1,4 +1,7 @@
 # Python Group project #9
+Students:
+* Glenn Valdivieso
+* Jonathan Salas
 
 ## Overview
 This code shows a website that is based on flask, and shows a table retrieved from a database which contains a dataframe
