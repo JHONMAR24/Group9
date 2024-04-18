@@ -25,7 +25,7 @@ collected from an external source.
 	* **N.B.: DB file named `koba.db` will be created at this step, and It needs to be reachable on next stage.**
 - Extract the folder path where you stored our repository. Then edit *base_path* variable located in line #8 inside `app_template_detail.py` file.
 	This steps allows you read the database file in order to show this data through the website.
-- Save app_template_detail.py file to keep new modifications.
+- Save `app_template_detail.py` file to keep new modifications.
 - Execute `app_template_detail.py` to initialize web server from your device.
 - Surf into the website [127.0.0.1/5000](127.0.0.1/5000).
 
