@@ -48,29 +48,41 @@ Our code performs below actions sequencely:
 1. Import of required libraries. For this stage we will use flask, sqlite3, and pathlib.
 2. In order to find the Database file (in this case `kobe.db`) we need to update this `.py` file to reach this file.
 3. Use of modules of flask to show structurally our webpage.
+4. Additional implementations:
+   	* Use of a filter for 'game' attribute. Only numbers are allowed.
+   	* Top navigation bar present on all pages:
+   	  	* Home: It goes to index_link.html page (as a typical Home page).
+   	  	* Data: It goes to data page (data_table.html)
+   	  	* About: It goes to abou page (about.html)
+   	  
 
    Below is a tree of how our website was designed:
 
 		Access to 127.0.0.1:5000:
 		
 		index page (index_links.html)
-			|
-			|---About (about.html)
-			|		|
-			|		|---Source of the data
-			|		|
-			|		|---Definition of the variables
+   		 Top navigation BAR
+   			|---Home (index_links.html) 
 			|
 			|
 			|---Data  (data_table.html)
+			|		|
+			|	Access to the DB
+			|		|
+			|	Store of the data into 'kobe' variable
+			|		|
+			|	Data allocation to proper column
+   			|		|
+   			|		|-----Box to filter data for 'game' attribute.	
+			|
+			|
+			|
+			|---About (about.html)
 					|
-				Access to the DB
+					|---Source of the data
 					|
-				Store of the data into 'kobe' variable
-					|
-				Data allocation to proper column
+					|---Definition of the variables
+			
 			
 
 
-
-### 
