@@ -51,7 +51,7 @@ Our code performs below actions sequencely:
 
    Below is a tree of how our website was designed:
 
-		Access to 127.0.0.1:5000 using any navigator program:
+		Access to 127.0.0.1:5000:
 		
 		index page (index_links.html)
 			|
