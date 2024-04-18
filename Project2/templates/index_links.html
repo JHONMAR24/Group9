@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #4682B4;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: #111;
+              }
+              
+              .active {
+                background-color: #87CEFA;
+              }
+            </style>
+
         <title>Group #9 Website</title>
-        
+       
     </head>
     <body>
-        <h1>Welcome to our fabulous website!</h1>
-        <p>Choose where you want to go:</p>
         <ul>
-            <li><a href="{{ url_for('about') }}">Link To About page</a></li>
-            <li><a href="{{ url_for('data') }}">Link To Data page</a></li>
-        </ul>
+            <li><a href="\">Home</a></li>
+            <li><a href="data">Data</a></li>
+            <li><a href="about">About</a></li>
+          </ul>
+        <h1>Welcome to our fabulous website!</h1>
+        <p>Choose where you want to go in the top bar navigation.</p>
+    
     </body>
 </html>
